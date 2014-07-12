@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Agenda</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<script src="scripts/jquery-1.11.0.min.js"></script>
+<script src="scripts/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="scripts/fastclick.js"></script>
+<script src="scripts/windowresizer.js"></script>
+<script src="scripts/collide.js"></script>
+<script src="scripts/functions.js"></script>
+<link rel="stylesheet" href="css/schema.css" />
+
+</head>
+
+<body>
+
+<div id="gameArea">
+
+<div id="startGameCanvas" class="padding">
+<a class="nextButton" href="#">start game</a>
+</div>
+
+<div id="endGameCanvas" class="padding">
+<h1>Einde Game</h1>
+<div id="endText"></div>
+<a id="endNext" class='nextButton' href='#'>volgende</a>
+<a id="endAgain" class='againButton' href='#'>opnieuw</a>
+</div>
+
+
+<div id="gameCanvas">
+<div id="exampleammo" class="ammo"></div>
+
+
+<div id="colidedetect1" class="collide"></div>
+
+
+<div id="rocketlaunch1" class="rocket"></div>
+<div id="rocketlaunch2" class="rocket"></div>
+<div id="rocketlaunch3" class="rocket"></div>
+
+<div id="loader1" class="loader"></div>
+<div id="loader2" class="loader"></div>
+<div id="loader3" class="loader"></div>
+
+  <div id="statsPanel"><div class="padding">Score:<span class="floatleft" id="score"></span>Level: <span class="floatleft" id="levelText"></span></div>
+ </div>
+
+</div>
+
+
+
+
+</div><!--einde gameArea-->
+
+</body>
+</html>

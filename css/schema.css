@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*De gamecanvas responsive maken*/
+body, html{
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+#gameArea {
+  position: absolute;
+  left:     50%;
+  top:      50%;
+  background-color: #BFF1FF;
+  overflow: hidden;
+}
+/*een 400 x 300 canvas dus een 4:3 verhouding*/
+#gameCanvas, #endGameCanvas {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#statsPanel {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  opacity: 0.8;
+  background-color: #069;
+}
+.padding{
+	padding: 1%;	
+}
+
+/*///////////////////////////////////*/
+
+.rocket{
+	width: 20%;
+	height: 20%;
+	background-image: url(../images/rocket.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 80%;
+}
+.rocket:hover{
+	cursor: pointer;	
+}
+#rocketlaunch1{
+	left: 10%;
+}
+#rocketlaunch2{
+	left: 45%;
+}
+#rocketlaunch3{
+	left: 80%;
+}
+
+.loader{
+	background-color: red;
+	width: 1%;
+	height: 8%;
+	top: 80%;
+	position: absolute;
+}
+#loader1{
+	left: 10%;
+}
+#loader2{
+	left: 45%;
+}
+#loader3{
+	left: 80%;
+}
+/*Hier de vogels*/
+
+.collide{
+	width: 6%;
+	height: 6%;
+	background-color: #090;
+	position: absolute;
+	left: -100%;
+}
+
+#colidedetect2{
+	left: 50%;
+}
+#colidedetect3{
+	left: 80%;
+}
+
+/*Hier de munitie*/
+.ammo{
+	width: 2%;
+	height: 1%;
+	background-color: #0C6;
+	position: absolute;
+}
+#exampleammo{
+	left: -100%;
+}
+
+#score, #escaped{
+	color: white;
+	padding-left: 2%;
+}
+
+
+h1{
+	color: white;
+	text-align: center;
+	font-size: 1em;
+}
+
